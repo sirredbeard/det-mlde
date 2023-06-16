@@ -1,6 +1,6 @@
 # About this theme
 
-This theme is called "pach-emdash" and lives in `/themes/pach-emdash`. 
+This is a copy of the pachyderm theme. The pachyderm theme is a custom theme that is called "pach-emdash" and was copied from the https://github.com/pachyderm/docs-hpe-ui repo subdirectory `/themes/pach-emdash`. 
 
 ---
 

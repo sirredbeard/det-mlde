@@ -1,5 +1,5 @@
-baseURL: "https://mldm.pachyderm.com"
-title: MLDM's Docs
+baseURL: "https://det.mlde.com"
+title: Determined MLDE's Docs
 
 enableGitInfo: true 
 enableEmoji: true 
@@ -29,7 +29,7 @@ params:
   editLink: 
     display: true #  displays a link to the corresponding github file for a given page; githubUrl must be set.
     githubUrl: https://github.com/pachyderm/docs-content/tree/main/  # should end with content/ 
-  giscus: false # displays giscus commenting on single pages.
+  giscus: true # displays giscus commenting on single pages.
   heroBanner:
     single: true # displays hero section with a background image, title, description, and date on single pages.
     section: true # displays hero section [...] on section pages.
