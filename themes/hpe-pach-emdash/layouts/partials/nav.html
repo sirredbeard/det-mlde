@@ -1,0 +1,30 @@
+  <nav class="spread sticky white level-top py-1 px-4">
+    
+    <div class="spread-left is-one-third is-hidden-mobile">
+      <a class=" hefty l spread-center c-pinned-center c-mr-1" href="/">
+        <img src="/images/hpe.svg" style="max-width: 50px;" alt="logo"> 
+        <div class="spread"><span class=" metrichpe-bold is-fit mr-2 is-hidden-tablet">HPE</span><span class="is-hidden-tablet">ML Data Management</span></div>
+        
+      </a>
+    </div>
+    <div class="spread-right is-one-third is-half-tablet is-fullsize-mobile c-rounded-1 c-ml-1 c-my-2">
+    {{if .IsHome}}
+    <div class="spread rounded-6 outlined c-pinned-center">
+      <div class="is-fit xs pl-2 is-hidden-mobile">🔍</div>
+      <div id="main-searchbox"></div>
+    </div>
+    {{else if ne .Layout "search"}}
+      <div class="spread rounded-6 outlined c-pinned-center">
+        <div class="is-fit xs pl-2 is-hidden-mobile">🔍</div>
+        <div id="main-searchbox"></div>
+      </div>
+      {{ partial "featureVersionDropdown.html" . }}
+    {{end}}
+  
+      <a href="https://www.hpe.com/us/en/hpe-machine-learning-data-management-software.html?emodal=/us/en/greenlake/fragments/modal-fragment/hpe-machine-learning-data-management-software-modal-form.fragment.html" class="green is-fit is-hidden-touch s semi-bold px-3 py-2 rounded-4"> Demo</a>
+      <button id="darkModeButton" class="is-fit black grayscale px-3 py-2 rounded-6" onclick="darkMode()">🌙</button>
+    </div>
+ 
+  
+    {{/*  <button class="darken-2 is-fit is-hidden-touch bold my-2 p-2"> Sandbox</button>  */}}
+  </nav>

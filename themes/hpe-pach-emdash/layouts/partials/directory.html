@@ -1,0 +1,34 @@
+<section class="pt-5 sticky is-one-fifth directory h-scroll px-3 is-hidden-mobile">
+  
+{{ template "directory" (dict "dir" .FirstSection.Sections "current" .RelPermalink "parent" .Parent "section" .CurrentSection "level" "1")  }}
+
+{{ define "directory" }}
+
+
+  {{ range .dir }}
+    {{ if and (not .Params.hidden) (or (eq .BundleType "branch") (.Params.directory) )}}
+        <div class="ml-3 my-2"> 
+            <a class="ml-3 my-2 {{if eq $.level "1" }} l metrichpe-bold {{else }} l normal {{end}}" href="{{ .RelPermalink }}" data-parent="{{.Parent.RelPermalink}}" data-section="{{.CurrentSection.RelPermalink}}"> {{ if eq $.current .RelPermalink }}👉{{else}} {{end}} {{if .Title}}{{.Title}}{{else}}{{ path.BaseName . | humanize }}{{end}}</a>
+      
+            <div class="{{if (.IsDescendant .Parent) }}{{else}}closed-folder{{end}}"> 
+              {{ template "directory" (dict "dir" .Pages "current" $.current "parent" .Parent "section" $.section "level" "2") }}
+            </div>
+        </div>
+    {{ else }}
+      <div class="c-pl-4 py-2 {{if (eq $.section.Title .CurrentSection.Title) }}{{else}}closed-folder{{end}}">
+        <a class="m normal" href="{{ .RelPermalink }}">{{ if eq $.current .RelPermalink }}👉{{else}} {{end}} {{if .Title}}{{.Title}}{{else}}{{ path.BaseName . | humanize }}{{end}}</a>
+    </div>
+    {{ end }}
+  {{ end }}
+
+{{ end }}
+{{/* optional bottom padding for end of sidebar items  */}}
+<div class="pb-7"></div>
+<div class="pb-7"></div>
+<div class="pb-7"></div>
+</section>
+
+
+
+
+{{/*  todo: make logic to display pages with a new param: directory  */}}
