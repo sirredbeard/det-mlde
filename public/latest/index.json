@@ -1,0 +1,17 @@
+{
+		"title": "Welcome to Determined AI",
+		"version":"",
+		"isLatest":"",
+		"pageKind":"page",
+		"parent": "Determined MLDE's Docs",
+		"description":"Alpha test of the Determined AI documentation.",
+		"date": "January 1, 1",
+		"uri": "https://det.mlde.com/latest/",
+		"relURI": "/latest/",
+		"body": " Welcome # This is the documentation home page.\n",
+		"beta": "<no value>",
+		"hidden": "<no value>",
+		"categories": [],
+		"tags": [],
+		"id": "9665a95604d477db1db57a7b1f4b66a2"
+}

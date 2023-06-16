@@ -1,0 +1,66 @@
+[
+    
+    
+    
+    {
+		"title": "Determined MLDE's Docs",
+		"version":"",
+		"isLatest":"",
+		"pageKind":"home",
+		"parent": "",
+		"description":"",
+		"date": "January 1, 1",
+		"uri": "https://det.mlde.com/",
+		"relURI": "/",
+		"body": "",
+		"beta": "<no value>",
+		"hidden": "<no value>",
+		"categories": [],
+		"tags": [],
+		"id": ""
+}
+    
+    
+    
+    ,
+    {
+		"title": "Series",
+		"version":"series",
+		"isLatest":"",
+		"pageKind":"taxonomy",
+		"parent": "Determined MLDE's Docs",
+		"description":"",
+		"date": "January 1, 1",
+		"uri": "https://det.mlde.com/series/",
+		"relURI": "/series/",
+		"body": "",
+		"beta": "<no value>",
+		"hidden": "<no value>",
+		"categories": [],
+		"tags": [],
+		"id": ""
+}
+    
+    
+    
+    ,
+    {
+		"title": "Welcome to Determined AI",
+		"version":"",
+		"isLatest":"",
+		"pageKind":"page",
+		"parent": "Determined MLDE's Docs",
+		"description":"Alpha test of the Determined AI documentation.",
+		"date": "January 1, 1",
+		"uri": "https://det.mlde.com/latest/",
+		"relURI": "/latest/",
+		"body": " Welcome # This is the documentation home page.\n",
+		"beta": "<no value>",
+		"hidden": "<no value>",
+		"categories": [],
+		"tags": [],
+		"id": "9665a95604d477db1db57a7b1f4b66a2"
+}
+    
+    
+]
